@@ -1,0 +1,27 @@
+thead {
+  color: green;
+}
+
+table {
+  margin: 1em auto;
+}
+
+tbody {
+  color: blue;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td, th {
+  padding: 5px;
+}
+
+tr:hover {
+  background: #f5f5f5;
+}
+
+thead tr:hover {
+  background-color: white;
+}

@@ -1,0 +1,14 @@
+.add {
+  width: 100%;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.add:hover {
+  background-color: #d9e70f;
+}

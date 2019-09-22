@@ -1,0 +1,9 @@
+.queryInput {
+  font-size: 2em;
+  width: 50%;
+  padding: 0.3em;
+  background: #3d3a39;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}

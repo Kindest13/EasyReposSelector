@@ -1,5 +1,6 @@
 # EasyReposSelector
 It's just a simple react app which uses git api search to log some data.
+Be aware that github search api allows only 10 requests per minute for unauthenticated requests, for auth requests it allows up to 30 not so much, so to say, here I use unauthenticated requests. See also (https://developer.github.com/v3/search/)
 
 ## Getting Started
 

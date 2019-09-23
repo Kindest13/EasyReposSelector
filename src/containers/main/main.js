@@ -38,10 +38,6 @@ class Main extends Component {
 
   onInputChange = ({ target: { value } }) => {
     if (value) {
-      this.setState({
-        showTable: true,
-        toggleFavourite: false
-      });
       fetch(`https://api.github.com/search/repositories?q=${value}`, {
         method: 'GET',
         mode: 'cors',
@@ -53,8 +49,11 @@ class Main extends Component {
         .then(res => res.json())
         .then(data => {
           const selectedData = data.items.map(item => ({ url: item.url, name: item.name, full_name: item.full_name }));
+          console.log(selectedData);
           this.setState({
-            queryItems: selectedData
+            queryItems: selectedData,
+            showTable: true,
+            toggleFavourite: false
           });
         })
         .catch(err => console.log(err));

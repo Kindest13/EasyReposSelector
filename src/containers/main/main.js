@@ -66,7 +66,7 @@ class Main extends Component {
     }
   }
   render() {
-    const table = this.state.showTable ? <Table data={this.state.queryItems} favourite={this.state.toggleFavourite} /> : null;
+    const table = this.state.showTable && this.state.queryItems.length ? <Table data={this.state.queryItems} favourite={this.state.toggleFavourite} /> : null;
     return (
       <React.Fragment>
         <Header />

@@ -40,10 +40,10 @@ class Table extends Component {
     return (
       <table>
         <thead>
-          <tr>{this.getHeader()}</tr>
+          <tr>{this.props.data.length ? this.getHeader() : null}</tr>
         </thead>
         <tbody>
-          {this.getRowsData()}
+          {this.props.data.length ? this.getRowsData() : null}
         </tbody>
       </table>
     );
